@@ -32,6 +32,10 @@ body {
   margin: 0 auto 0;
 }
 
+.app__new-block {
+  margin: 16px 0;
+}
+
 .app__element {
   width: 56%;
   display: inline-block;
