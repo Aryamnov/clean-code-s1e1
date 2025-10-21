@@ -35,12 +35,13 @@ var createNewTaskElement = function (taskString) {
   listItem.className = 'app__item';
 
   label.innerText = taskString;
-  label.className = 'app__element';
+  label.className = 'app__label app__element';
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
+  checkBox.className = "app__input";
   editInput.type = "text";
-  editInput.className = "app__element";
+  editInput.className = "app__input app__element";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "app__button app__button_edit";
@@ -48,6 +49,7 @@ var createNewTaskElement = function (taskString) {
   deleteButton.className = "app__button app__button_delete";
   deleteButtonImg.src = './remove.svg';
   deleteButtonImg.setAttribute('alt', 'delete icon in the form of a cross.');
+  deleteButtonImg.className = "app__icon-delete";
   deleteButton.appendChild(deleteButtonImg);
 
 
